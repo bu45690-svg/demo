@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-from sklearn.preprocessing import LabelEncoder, StandardScaler
+from sklearn.preprocessing import LabelEncoder
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
 
@@ -84,4 +84,5 @@ st.subheader("✅ Recommended Meal Plan:")
 st.success(recommended_meal)
 
 if st.checkbox("Show Full Dataset"):
+
     st.dataframe(data)
